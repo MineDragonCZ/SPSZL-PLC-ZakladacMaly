@@ -181,11 +181,33 @@ VAR_GLOBAL
   r1_p0_CNT_IN2        AT %X114 : TCNTF_IN;
   r1_p0_CNT_OUT1       AT %Y20  : TCNTF_OUT;
   r1_p0_CNT_OUT2       AT %Y26  : TCNTF_OUT;
+(* alias *)
+  horizontalImpulse1   AT r1_p0_DI.DI5;
+  horizontalImpulse2   AT r1_p0_DI.DI4;
+  koncakBack           AT r1_p0_DI.DI3;
+  koncakFront          AT r1_p0_DI.DI2;
+  koncakHorizontal     AT r1_p0_DI.DI11;
+  koncakVertical       AT r1_p0_DI.DI8;
+  lightInside          AT r1_p0_DI.DI10;
+  lightOutside         AT r1_p0_DI.DI9;
+  trail1               AT r1_p0_DI.DI7;
+  trail2               AT r1_p0_DI.DI6;
+  verticalImpulse1     AT r1_p0_DI.DI0;
+  verticalImpulse2     AT r1_p0_DI.DI1;
 END_VAR
 (* ---------------------------------------------------------------------- *)
 (* OS-1401 *)
 VAR_GLOBAL
   r1_p1_DO             AT %Y32  : TBIN_12DO;
+(* alias *)
+  beltBackward         AT r1_p1_DO.DO1;
+  beltForward          AT r1_p1_DO.DO0;
+  posunHorizontalBackward AT r1_p1_DO.DO7;
+  posunHorizontalForward AT r1_p1_DO.DO6;
+  posunHorizontalLeft  AT r1_p1_DO.DO3;
+  posunHorizontalRight AT r1_p1_DO.DO2;
+  posunVerticalDown    AT r1_p1_DO.DO4;
+  posunVerticalUp      AT r1_p1_DO.DO5;
 END_VAR
 (* -- *)
 (* -- *)

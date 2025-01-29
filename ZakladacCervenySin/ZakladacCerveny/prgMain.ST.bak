@@ -7,6 +7,7 @@ PROGRAM prgMain
   horizontalStepsCount(CU := horizontalImpulse1, R := koncakHorizontal, PV := 500);
   
   IF koncakHorizontal THEN
+     horizontalStepsCount := 0;
      runningBack := false;
   END_IF
   
